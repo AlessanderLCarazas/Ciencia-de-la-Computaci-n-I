@@ -1,0 +1,137 @@
+1:
+class cubo {
+	// Atributos
+private:
+	int arista;
+	int peso;
+	 // Métodos
+public:
+	cubo(int, int); 
+	int calcular_area();
+	int calcular_volumen();
+};
+
+
+2:
+class cilindro {
+    // Atributos
+private:
+
+    int radio;
+    int altura;
+    int num_tapas;
+    // Métodos
+public:
+    
+    cilindro(int, int, int); //Constructor.
+    double calcular_area_lateral();
+    double calcular_area_total();
+    double calcular_volumen();
+    void imprimir_datos();
+};
+
+
+3:
+class producto {
+	// Atributos
+private:
+	string descripcion;
+	int precio;
+	int cantidad;
+	int stock;
+	// Métodos
+public:
+	void carga_datos(string, int, int);
+	double calcular_precio_venta();
+	void imprimir();
+};
+
+
+4:
+Class alumno {
+	// Atributos
+private: 
+	string codigo_alumno;
+	int nciclo;
+	int nota1;
+	int nota2;
+	int nota3;
+	 // Metodos
+public:
+	alumno(string, int, string, int); //constructor
+	int nota_final();
+	int aprueba();
+	void imprimir_alumno();
+}
+
+
+5:
+class trabajador {
+    // Atributos
+private:
+
+    string nombre;
+    int puesto;
+    int edad;
+    int dni;
+    int num_horas_trabajo;
+
+    // Métodos
+public:
+    
+    trabajador(int, int, int); //Constructor.
+    int salario_xhora();
+    double sueldo_total();
+    void datos();
+};
+
+#include <iostream>
+
+using namespace std;
+
+class Punto{
+    private:
+        //atributos
+        double eje_x, eje_y, eje_z;
+    public:
+        //métodos
+        void setX(double);
+        void setY(double);
+        void setZ(double);
+
+        double getX();
+        double getY();
+        double getZ();
+
+};
+void Punto::setX(double x){
+    eje_x=x;
+}
+double Punto::getX(){
+    return eje_x;
+}
+
+void Punto::setY(double y){
+    eje_y=y;
+}
+double Punto::getY(){
+    return eje_y;
+}
+
+void Punto::setZ(double z){
+    eje_z=z;
+}
+double Punto::getZ(){
+    return eje_z;
+}
+int main()
+{
+    Punto r1;
+    r1.setX(5);
+    r1.setY(6);
+    r1.setZ(7);
+    cout<<"Eje x: "<<r1.getX()<<endl;
+    cout<<"Eje y: "<<r1.getY()<<endl;
+    cout<<"Eje z: "<<r1.getZ()<<endl;
+    return 0;
+}
